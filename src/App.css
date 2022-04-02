@@ -124,8 +124,9 @@ button:hover {
 }
 
 .crowd .word {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
+  padding-bottom: 5px;
 }
 
 .nextbus {
@@ -145,7 +146,7 @@ button:hover {
 }
 
 .nextbus .minutes {
-  font-size: 20px;
+  font-size: 25px;
   padding-bottom: 10px;
   font-weight: 900;
 }

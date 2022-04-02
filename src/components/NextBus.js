@@ -7,8 +7,8 @@ function NextBus() {
       <div className="nextbus cards">
         <div className="word">Next Bus In</div>
         <div className="minutes">8 Mins</div>
-        <MdOutlinePerson style={{ fontSize: "30px", padding: "0 0 10px 0" }} />
-        <MdOutlinePerson style={{ fontSize: "30px", padding: "0 0 10px 0 " }} />
+        <MdOutlinePerson style={{ fontSize: "20px", padding: "0 0 10px 0" }} />
+        <MdOutlinePerson style={{ fontSize: "20px", padding: "0 0 10px 0 " }} />
       </div>
     </>
   );
