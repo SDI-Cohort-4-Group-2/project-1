@@ -63,11 +63,11 @@ body {
   border: none;
   background-color: #1c1e27;
   outline: none;
-  color: #f5f7f8;
+  color: #ffffff;
 }
 
 ::placeholder {
-  color: #fafafa;
+  color: #a3a2a2;
 }
 
 button {
