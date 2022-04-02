@@ -93,9 +93,6 @@ button:hover {
   border-radius: 15px;
   padding: 10px 0px 10px 0px;
   background-color: #8f3636;
-  /* background-image: linear-gradient(90deg, #da4453, #89216b); */
-  /* background-image: linear-gradient(90deg, #7ade73, #73cede); */
-  /* background-image: linear-gradient(45deg, #d0f257, #2cd1ab); */
 }
 
 .arrival .arriving {
@@ -115,9 +112,6 @@ button:hover {
 .crowd {
   grid-column: 3;
   grid-column-end: 5;
-  /* background-image: linear-gradient(270deg, #da4453, #89216b); */
-  /* background-image: linear-gradient(270deg, #de7398, #de9873); */
-  /* background-image: linear-gradient(90deg, #4a45d1, #807dd6); */
   background-color: #8f3636;
   padding: 20px 15px 5px 15px;
   border-radius: 15px;
@@ -126,17 +120,13 @@ button:hover {
 .crowd .word {
   font-size: 15px;
   font-weight: 400;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .nextbus {
   grid-column: 3;
   grid-column-end: 5;
   padding: 10px 0 0 0;
-  /* background-image: linear-gradient(270deg, #da4453, #89216b); */
-  /* background-image: linear-gradient(270deg, #26f596, #0499f2); */
-  /* background-image: linear-gradient(45deg, #d0f257, #2cd1ab); */
-  /* background-image: linear-gradient(45deg, #de8373, #cade73); */
   background-color: #8f3636;
   border-radius: 15px;
 }
@@ -152,8 +142,6 @@ button:hover {
 }
 
 .friendly {
-  /* background-image: linear-gradient(45deg, #de8373, #cade73);
-  background-image: linear-gradient(45deg, #d0f257, #2cd1ab); */
   background-color: #8f3636;
   grid-column: 1;
   grid-column-end: 3;
@@ -171,8 +159,6 @@ button:hover {
   grid-column: 3;
   grid-column-end: 5;
   padding: 20px;
-  /* background-image: linear-gradient(270deg, #da4453, #89216b);
-  background-image: linear-gradient(270deg, #26f596, #0499f2); */
   border-radius: 15px;
 }
 

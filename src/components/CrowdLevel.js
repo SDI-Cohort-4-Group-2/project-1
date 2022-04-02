@@ -6,10 +6,10 @@ function CrowdLevel() {
     <>
       <div className="crowd cards">
         <br />
-        <MdOutlinePerson style={{ fontSize: "40px", padding: "0 0 10px 0" }} />
-        <MdOutlinePerson style={{ fontSize: "40px", padding: "0 0 10px 0" }} />
-        <MdOutlinePerson style={{ fontSize: "40px", padding: "0 0 10px 0" }} />
-        <MdOutlinePerson style={{ fontSize: "40px", padding: "0 0 10px 0" }} />
+        <MdOutlinePerson style={{ fontSize: "30px", padding: "0 0 10px 0" }} />
+        <MdOutlinePerson style={{ fontSize: "30px", padding: "0 0 10px 0" }} />
+        <MdOutlinePerson style={{ fontSize: "30px", padding: "0 0 10px 0" }} />
+        <MdOutlinePerson style={{ fontSize: "30px", padding: "0 0 10px 0" }} />
         <div className="word">Crowded</div>
       </div>
     </>
