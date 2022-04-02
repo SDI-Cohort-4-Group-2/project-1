@@ -91,17 +91,17 @@ button:hover {
   grid-row: 1;
   grid-row-end: 3;
   border-radius: 15px;
-  padding: 10px 0px 10px 0px;
+  padding: 20px 0px 20px 0px;
   background-color: #8f3636;
 }
 
 .arrival .arriving {
-  padding: 10px 0 40px 0;
+  padding: 5px 0 50px 0;
   font-size: 20px;
 }
 
 .arrival .busno {
-  padding-top: 60px;
+  padding-top: 55px;
 }
 
 .arrival .minutes {
@@ -113,7 +113,7 @@ button:hover {
   grid-column: 3;
   grid-column-end: 5;
   background-color: #8f3636;
-  padding: 20px 15px 5px 15px;
+  padding: 20px 15px 15px 15px;
   border-radius: 15px;
 }
 
@@ -126,7 +126,7 @@ button:hover {
 .nextbus {
   grid-column: 3;
   grid-column-end: 5;
-  padding: 10px 0 0 0;
+  padding: 15px 0 5px 0;
   background-color: #8f3636;
   border-radius: 15px;
 }
