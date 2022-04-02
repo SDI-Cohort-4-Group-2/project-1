@@ -1,10 +1,242 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  background-color: #363636;
+  /* color: rgb(20, 17, 17); */
+  color: #ffffff;
+  padding: 100px;
+}
 
-test
+.bus {
+  font-size: 40px;
+  font-weight: 200;
+  /* color: #ffffff; */
+  color: #8f3636;
+  cursor: default;
+}
 
+.check {
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: default;
+}
 
+.container {
+  border-radius: 15px;
+  /* background-color: whitesmoke; */
+  padding: 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 400px; */
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-test
+.search {
+  /* border: black solid 1px; */
+  padding: 25px 0px 50px 0px;
+}
+
+.search-one {
+  border-radius: 32px;
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  /* background-color: #211c27; */
+  background-color: #1c1e27;
+  outline: none;
+  color: #ffffff;
+}
+
+.search-two {
+  border-radius: 32px;
+  padding: 10px;
+  margin-right: 8px;
+  border: none;
+  /* background-color: #211c27; */
+  background-color: #1c1e27;
+  outline: none;
+  color: #f5f7f8;
+}
+
+::placeholder {
+  /* color: #c2bdc1; */
+  color: #fafafa;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  /* background-color: #802064; */
+  /* background-color: #1c1e27; */
+  background-color: #8f3636;
+  opacity: 80%;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+.arrival {
+  /* border: red solid 10px; */
+
+  grid-column: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  grid-row-end: 3;
+  border-radius: 15px;
+  padding: 10px 0px 10px 0px;
+  background-color: #8f3636;
+  /* background-image: linear-gradient(90deg, #da4453, #89216b); */
+  /* background-image: linear-gradient(90deg, #7ade73, #73cede); */
+  /* background-image: linear-gradient(45deg, #d0f257, #2cd1ab); */
+}
+
+.arrival .arriving {
+  padding: 10px 0 40px 0;
+  font-size: 20px;
+  /* color: white; */
+}
+
+.arrival .busno {
+  padding-top: 60px;
+}
+
+.arrival .minutes {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.crowd {
+  /* border: pink solid 10px; */
+  grid-column: 3;
+  grid-column-end: 5;
+  /* background-image: linear-gradient(270deg, #da4453, #89216b); */
+  /* background-image: linear-gradient(270deg, #de7398, #de9873); */
+  /* background-image: linear-gradient(90deg, #4a45d1, #807dd6); */
+  background-color: #8f3636;
+  padding: 20px 15px 5px 15px;
+  border-radius: 15px;
+}
+
+.crowd .word {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nextbus {
+  /* border: green solid 10px; */
+  grid-column: 3;
+  grid-column-end: 5;
+  padding: 10px 0 0 0;
+  /* background-image: linear-gradient(270deg, #da4453, #89216b); */
+  /* background-image: linear-gradient(270deg, #26f596, #0499f2); */
+  /* background-image: linear-gradient(45deg, #d0f257, #2cd1ab); */
+  /* background-image: linear-gradient(45deg, #de8373, #cade73); */
+  background-color: #8f3636;
+  border-radius: 15px;
+}
+
+.nextbus .word {
+  padding: 5px 0px 10px 0;
+}
+
+.nextbus .minutes {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+.friendly {
+  /* border: blue solid 10px; */
+  /* background-image: linear-gradient(90deg, #da4453, #89216b); */
+  /* background-image: linear-gradient(90deg, #26f596, #0499f2); */
+  /* background-image: linear-gradient(45deg, #de8373, #cade73); */
+  /* background-image: linear-gradient(45deg, #d0f257, #2cd1ab); */
+  background-color: #8f3636;
+  grid-column: 1;
+  grid-column-end: 3;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.friendly .word {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 25px;
+}
+
+.bustype {
+  /* border: lightblue solid 10px; */
+  grid-column: 3;
+  grid-column-end: 5;
+  padding: 20px;
+  /* background-image: linear-gradient(270deg, #da4453, #89216b); */
+  /* background-image: linear-gradient(270deg, #26f596, #0499f2); */
+  /* background-image: linear-gradient(45deg, #b173de, #de73ba); */
+  /* background-image: linear-gradient(270deg, #de7398, #de9873); */
+
+  border-radius: 15px;
+}
+
+.cards {
+  background-color: #8f3636;
+  opacity: 80%;
+  cursor: default;
+}
+
+.cards:hover {
+  opacity: 100%;
+}
+
+@media (max-width: 605px) {
+  .search-one {
+    margin: 10px;
+  }
+  .arrival {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .crowd {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .nextbus {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .friendly {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .friendly .word {
+    padding: 10px;
+  }
+
+  .bustype {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+}
