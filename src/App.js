@@ -15,11 +15,11 @@ function App() {
 
       <SearchBar />
       <div className="container">
-        <ArrivalMinutes className="grid-col-span-2" />
-        <CrowdLevel className="grid-col-span-2" />
-        <NextBus className="grid-col-span-2" />
-        <WheelchairFriendly className="grid-col-span-2" />
-        <BusType className="grid-col-span-2" />
+        <ArrivalMinutes />
+        <CrowdLevel />
+        <NextBus />
+        <WheelchairFriendly />
+        <BusType />
       </div>
     </div>
   );
