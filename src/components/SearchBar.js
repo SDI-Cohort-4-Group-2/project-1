@@ -1,3 +1,6 @@
+import React from "react";
+import { FiSearch } from "react-icons/fi";
+
 import API from './API'
 import {useState} from "react";
 
@@ -38,9 +41,11 @@ export default function SearchBar(props) {
     return (
         <>
             <form onSubmit={getBusArrivalData}>
-                <input type='text' placeholder='Enter Bus Stop Code' name='busStopCode' onChange={handleInput} />
-                <input type='text' placeholder='Enter Bus Number' name='busNumber' onChange={handleInput} />
-                <button>Search</button>
+                <input type='text' placeholder='Enter Bus Stop Code' name='busStopCode' className="search-one"
+            required onChange={handleInput} />
+                <input type='text' placeholder='Enter Bus Number' name='busNumber' className="search-two"
+            required onChange={handleInput} />
+                <button><FiSearch style={{ color: "#fff", fontSize: "10px" }} /></button>
             </form>
         </>
     )

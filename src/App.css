@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  box-sizing: border-box;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: center; */
+  text-align: center;
+  background-color: #363636;
+  color: #ffffff;
+  padding: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.bus {
+  font-size: 40px;
+  font-weight: 200;
+  color: #8f3636;
+  cursor: default;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.check {
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: default;
+}
+
+.container {
+  border-radius: 15px;
+  padding: 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.search {
+  padding: 25px 0px 50px 0px;
+}
+
+.search-one {
+  border-radius: 32px;
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  background-color: #1c1e27;
+  outline: none;
+  color: #ffffff;
+}
+
+.search-two {
+  border-radius: 32px;
+  padding: 10px;
+  margin-right: 8px;
+  border: none;
+  background-color: #1c1e27;
+  outline: none;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #a3a2a2;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #8f3636;
+  opacity: 80%;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+.arrival {
+  grid-column: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  grid-row-end: 3;
+  border-radius: 15px;
+  padding: 20px 0px 20px 0px;
+  background-color: #8f3636;
+}
+
+.arrival .arriving {
+  padding: 5px 0 50px 0;
+  font-size: 20px;
+}
+
+.arrival .busno {
+  padding-top: 55px;
+}
+
+.arrival .minutes {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.crowd {
+  grid-column: 3;
+  grid-column-end: 5;
+  background-color: #8f3636;
+  padding: 20px 15px 15px 15px;
+  border-radius: 15px;
+}
+
+.crowd .word {
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.nextbus {
+  grid-column: 3;
+  grid-column-end: 5;
+  padding: 15px 0 5px 0;
+  background-color: #8f3636;
+  border-radius: 15px;
+}
+
+.nextbus .word {
+  padding: 5px 0px 10px 0;
+}
+
+.nextbus .minutes {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+.friendly {
+  background-color: #8f3636;
+  grid-column: 1;
+  grid-column-end: 3;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.friendly .word {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 25px;
+}
+
+.bustype {
+  grid-column: 3;
+  grid-column-end: 5;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.cards {
+  background-color: #8f3636;
+  opacity: 80%;
+  cursor: default;
+}
+
+.cards:hover {
+  opacity: 100%;
+}
+
+@media (max-width: 605px) {
+  .search-one {
+    margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .arrival {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .crowd {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .nextbus {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .friendly {
+    grid-column: 2;
+    grid-column-end: 4;
+  }
+
+  .friendly .word {
+    padding: 10px;
+  }
+
+  .bustype {
+    grid-column: 2;
+    grid-column-end: 4;
   }
 }
