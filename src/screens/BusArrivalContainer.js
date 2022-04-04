@@ -1,6 +1,11 @@
 import API from "../components/API";
 import { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar";
+import ArrivalMinutes from "../components/ArrivalMinutes";
+import BusType from "../components/BusType";
+import CrowdLevel from "../components/CrowdLevel";
+import NextBus from "../components/NextBus";
+import WheelchairFriendly from "../components/WheelchairFriendly";
 
 export default function BusArrivalContainer() {
   const [busStops, setBusStops] = useState([]);
@@ -38,6 +43,13 @@ export default function BusArrivalContainer() {
   return (
     <>
       <SearchBar fetchData={fetchData} />
+      <div className="container">
+        <ArrivalMinutes />
+        <CrowdLevel />
+        <NextBus />
+        <WheelchairFriendly />
+        <BusType />
+      </div>
     </>
   );
 }
