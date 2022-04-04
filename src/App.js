@@ -1,5 +1,5 @@
 import "./App.css";
-import SearchBar from "./screens/SearchBar";
+import SearchBar from "./components/SearchBar";
 import ArrivalMinutes from "./screens/ArrivalMinutes";
 import CrowdLevel from "./screens/CrowdLevel";
 import NextBus from "./screens/NextBus";
@@ -14,8 +14,8 @@ function App() {
       <span className="bus">BUS</span>
       <span className="check">CHECK</span>
 
-      <SearchBar />
-      {/* <BusArrivalContainer /> */}
+      {/* <SearchBar /> */}
+      <BusArrivalContainer />
       <div className="container">
         <ArrivalMinutes />
         <CrowdLevel />

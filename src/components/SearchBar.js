@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 
-import API from "../components/API";
+import API from "./API";
 import { useState } from "react";
 
 export default function SearchBar(props) {

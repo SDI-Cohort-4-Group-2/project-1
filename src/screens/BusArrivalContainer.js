@@ -1,6 +1,6 @@
 import API from "../components/API";
 import { useState, useEffect } from "react";
-import SearchBar from "./SearchBar";
+import SearchBar from "../components/SearchBar";
 
 export default function BusArrivalContainer() {
   const [busStops, setBusStops] = useState([]);
