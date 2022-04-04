@@ -1,14 +1,12 @@
-
 import "./App.css";
-import SearchBar from "./components/SearchBar";
-import ArrivalMinutes from "./components/ArrivalMinutes";
-import CrowdLevel from "./components/CrowdLevel";
-import NextBus from "./components/NextBus";
-import WheelchairFriendly from "./components/WheelchairFriendly";
-import BusType from "./components/BusType";
-import './App.css';
-import BusArrivalContainer from './screens/BusArrivalContainer';
-
+import SearchBar from "./screens/SearchBar";
+import ArrivalMinutes from "./screens/ArrivalMinutes";
+import CrowdLevel from "./screens/CrowdLevel";
+import NextBus from "./screens/NextBus";
+import WheelchairFriendly from "./screens/WheelchairFriendly";
+import BusType from "./screens/BusType";
+import "./App.css";
+import BusArrivalContainer from "./screens/BusArrivalContainer";
 
 function App() {
   return (
@@ -17,7 +15,7 @@ function App() {
       <span className="check">CHECK</span>
 
       <SearchBar />
-    <BusArrivalContainer />
+      {/* <BusArrivalContainer /> */}
       <div className="container">
         <ArrivalMinutes />
         <CrowdLevel />
@@ -25,8 +23,7 @@ function App() {
         <WheelchairFriendly />
         <BusType />
       </div>
-
-    
+    </div>
   );
 }
 
