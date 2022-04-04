@@ -1,5 +1,4 @@
 import { useState } from "react";
-import BusArrivalContainer from "../screens/BusArrivalContainer";
 
 function ArrivalMinutes({ props }) {
   const [time, setTime] = useState([]);
