@@ -1,7 +1,9 @@
 import React from "react";
 import { MdOutlinePerson } from "react-icons/md";
 
-function NextBus() {
+function NextBus({ fetchData }) {
+  console.log(`fetch 2`, fetchData);
+
   return (
     <>
       <div className="nextbus cards">
