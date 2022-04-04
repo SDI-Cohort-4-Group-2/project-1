@@ -1,5 +1,5 @@
 import API from './API'
-import { useState} from "react";
+import {useState} from "react";
 
 export default function SearchBar(props) {
     const [busStopCode, setBusStopCode] = useState('');
