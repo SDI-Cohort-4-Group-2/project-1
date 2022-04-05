@@ -1,5 +1,5 @@
 import API from "../components/API";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import SearchBar from "../components/SearchBar";
 import ArrivalMinutes from "../components/ArrivalMinutes";
 import BusType from "../components/BusType";
@@ -82,7 +82,7 @@ export default function BusArrivalContainer() {
     setBusStops(data);
   }
 
-  console.log(JSON.stringify(busArrival));
+  // console.log(JSON.stringify(busArrival));
 
   return (
     <>
@@ -91,8 +91,9 @@ export default function BusArrivalContainer() {
         <ArrivalMinutes props={busArrival} />
         <CrowdLevel />
         <NextBus busArrival={busArrival} />
-        <WheelchairFriendly />
-        <BusType />
+        <WheelchairFriendly props={busArrival} />
+        <BusType props={busArrival}/>
+
       </div>
     </>
   );
