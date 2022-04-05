@@ -172,6 +172,10 @@ button:hover {
   opacity: 100%;
 }
 
+.error-msg {
+  padding-top: 10px;
+}
+
 @media (max-width: 605px) {
   .search-one {
     margin: 10px;

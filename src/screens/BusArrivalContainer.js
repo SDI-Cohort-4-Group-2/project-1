@@ -1,4 +1,3 @@
-import API from "../components/API";
 import { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar";
 import ArrivalMinutes from "../components/ArrivalMinutes";
@@ -6,6 +5,7 @@ import BusType from "../components/BusType";
 import CrowdLevel from "../components/CrowdLevel";
 import NextBus from "../components/NextBus";
 import WheelchairFriendly from "../components/WheelchairFriendly";
+import BusStops from "../components/data/BusStops.json";
 
 export default function BusArrivalContainer() {
   const defaultState = {
@@ -59,34 +59,22 @@ export default function BusArrivalContainer() {
     setBusArrival(data);
   }
 
-  // useEffect(() => {
-  //     getBusStopData();
+  useEffect(() => {
+      getBusStopData();
 
-  // }, [])
+  }, [])
 
-  async function getBusStopData() {
-    const RESPONSE = await API.get("/BusStops", {
-      headers: {
-        AccountKey: "HcXVAu/3TQ6F7Ymp1JHamA==",
-      },
-    });
-
-    let data = RESPONSE.data.value.map((item) => {
-      return {
-        BusStop: item.BusStopCode,
-        RoadName: item.RoadName,
-        Desc: item.Description,
-      };
+  function getBusStopData() {
+    let data = BusStops.value.map((item) => {
+      return (`${item.BusStopCode} - ${item.Description}`)
     });
 
     setBusStops(data);
   }
 
-  // console.log(JSON.stringify(busArrival));
-
   return (
     <>
-      <SearchBar fetchData={fetchData} />
+      <SearchBar fetchData={fetchData} busStops={busStops} />
       <div className="container">
         <ArrivalMinutes props={busArrival} />
         <CrowdLevel />
