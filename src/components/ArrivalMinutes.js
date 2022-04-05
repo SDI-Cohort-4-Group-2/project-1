@@ -4,7 +4,10 @@ function ArrivalMinutes({ props }) {
   const [time, setTime] = useState([]);
 
   function timeDiff() {
-    const timeDiff = Math.ceil((new Date(props.data.Services[0].NextBus.EstimatedArrival) - new Date()) / 60000);
+    const timeDiff = Math.ceil(
+      (new Date(props.data.Services[0].NextBus.EstimatedArrival) - new Date()) /
+        60000
+    );
     setTime(timeDiff);
   }
   setTimeout(timeDiff);
