@@ -41,8 +41,22 @@ export default function SearchBar(props) {
     <>
       <div className="search">
         <form onSubmit={getBusArrivalData}>
-          <input type="text" placeholder="Enter Bus Stop Code" name="busStopCode" className="search-one" required onChange={handleInput} />
-          <input type="text" placeholder="Enter Bus Number" name="busNumber" className="search-two" required onChange={handleInput} />
+          <input
+            type="text"
+            placeholder="Enter Bus Stop Code"
+            name="busStopCode"
+            className="search-one"
+            required
+            onChange={handleInput}
+          />
+          <input
+            type="text"
+            placeholder="Enter Bus Number"
+            name="busNumber"
+            className="search-two"
+            required
+            onChange={handleInput}
+          />
           <button>
             <FiSearch style={{ color: "#fff", fontSize: "10px" }} />
           </button>
