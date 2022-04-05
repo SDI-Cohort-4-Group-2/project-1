@@ -82,7 +82,7 @@ export default function BusArrivalContainer() {
     setBusStops(data);
   }
 
-  console.log(JSON.stringify(busArrival));
+  // console.log(JSON.stringify(busArrival));
 
   return (
     <>
