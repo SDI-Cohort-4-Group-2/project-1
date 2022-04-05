@@ -1,5 +1,5 @@
 import API from "../components/API";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import SearchBar from "../components/SearchBar";
 import ArrivalMinutes from "../components/ArrivalMinutes";
 import BusType from "../components/BusType";
@@ -8,8 +8,52 @@ import NextBus from "../components/NextBus";
 import WheelchairFriendly from "../components/WheelchairFriendly";
 
 export default function BusArrivalContainer() {
+  const defaultState = {
+    data: {
+      BusStopCode: "",
+      Services: [
+        {
+          ServiceNo: "",
+          Operator: "",
+          NextBus: {
+            OriginCode: "",
+            DestinationCode: "",
+            EstimatedArrival: new Date(),
+            Latitude: "",
+            Longitude: "",
+            VisitNumber: "",
+            Load: "",
+            Feature: "",
+            Type: "",
+          },
+          NextBus2: {
+            OriginCode: "",
+            DestinationCode: "",
+            EstimatedArrival: new Date(),
+            Latitude: "",
+            Longitude: "",
+            VisitNumber: "",
+            Load: "",
+            Feature: "",
+            Type: "",
+          },
+          NextBus3: {
+            OriginCode: "",
+            DestinationCode: "",
+            EstimatedArrival: new Date(),
+            Latitude: "",
+            Longitude: "",
+            VisitNumber: "",
+            Load: "",
+            Feature: "",
+            Type: "",
+          },
+        },
+      ],
+    },
+  };
   const [busStops, setBusStops] = useState([]);
-  const [busArrival, setBusArrival] = useState([]);
+  const [busArrival, setBusArrival] = useState(defaultState);
 
   function fetchData(data) {
     setBusArrival(data);
@@ -38,17 +82,18 @@ export default function BusArrivalContainer() {
     setBusStops(data);
   }
 
-  console.log(busStops);
+  // console.log(JSON.stringify(busArrival));
 
   return (
     <>
       <SearchBar fetchData={fetchData} />
       <div className="container">
-        <ArrivalMinutes />
+        <ArrivalMinutes props={busArrival} />
         <CrowdLevel />
-        <NextBus />
-        <WheelchairFriendly />
-        <BusType />
+        <NextBus busArrival={busArrival} />
+        <WheelchairFriendly props={busArrival} />
+        <BusType props={busArrival}/>
+
       </div>
     </>
   );
