@@ -1,5 +1,5 @@
 import API from "../components/API";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import SearchBar from "../components/SearchBar";
 import ArrivalMinutes from "../components/ArrivalMinutes";
 import BusType from "../components/BusType";
@@ -91,8 +91,8 @@ export default function BusArrivalContainer() {
         <ArrivalMinutes props={busArrival} />
         <CrowdLevel />
         <NextBus />
-        <WheelchairFriendly />
-        <BusType />
+        <WheelchairFriendly props={busArrival} />
+        <BusType props={busArrival}/>
       </div>
     </>
   );
