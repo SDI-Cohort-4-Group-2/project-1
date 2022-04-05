@@ -90,7 +90,7 @@ export default function BusArrivalContainer() {
       <div className="container">
         <ArrivalMinutes props={busArrival} />
         <CrowdLevel />
-        <NextBus />
+        <NextBus busArrival={busArrival} />
         <WheelchairFriendly />
         <BusType />
       </div>
