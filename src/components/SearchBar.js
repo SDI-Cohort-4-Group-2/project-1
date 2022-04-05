@@ -1,6 +1,6 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
-
+import Autocomplete from "./Autocomplete/Autocomplete";
 import API from "./API";
 import { useState } from "react";
 
@@ -36,36 +36,26 @@ export default function SearchBar(props) {
         props.fetchData({ data });
         setErrorMsg("");
       } else {
-        setErrorMsg(`No bus service ${busNumber} at ${busStopCode}`);
+        setErrorMsg(`No bus service ${busNumber} at selected bus stop`);
       }
     }
   }
 
   function handleInput(e) {
-    const FIELDNAME = e.target.name;
-
-    switch (FIELDNAME) {
-      case "busStopCode":
-        setBusStopCode(e.target.value);
-        break;
-      case "busNumber":
-        setBusNumber(e.target.value);
-        break;
-    }
+    setBusNumber(e.target.value);
   }
 
+  function fetchData(data) {
+    const userInput = data;
+    const busStopCode = userInput.substring(0, userInput.indexOf('-') - 1);
+    setBusStopCode(busStopCode);
+  }
+  
   return (
     <>
       <div className="search">
         <form onSubmit={getBusArrivalData}>
-          <input
-            type="text"
-            placeholder="Enter Bus Stop Code"
-            name="busStopCode"
-            className="search-one"
-            required
-            onChange={handleInput}
-          />
+          <Autocomplete fetchData={fetchData} busStops={props.busStops} />
           <input
             type="text"
             placeholder="Enter Bus Number"
@@ -77,9 +67,9 @@ export default function SearchBar(props) {
           <button>
             <FiSearch style={{ color: "#fff", fontSize: "10px" }} />
           </button>
-          <h3>{errorMsg}</h3>
+          <h3 className="error-msg">{errorMsg}</h3>
         </form>
       </div>
     </>
-  );
+  )
 }
