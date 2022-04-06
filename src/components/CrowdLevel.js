@@ -27,7 +27,7 @@ function CrowdLevel({ props }) {
           <div>Standing Available</div>
         </>
       );
-    } else {
+    } else if (props.data.Services[0].NextBus.Load === "LSD") {
       return (
         <>
           <MdOutlinePerson
@@ -43,6 +43,12 @@ function CrowdLevel({ props }) {
             style={{ fontSize: "30px", padding: "0 0 10px 0" }}
           />
           <div>Limited Standing</div>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <div>-</div>
         </>
       );
     }
