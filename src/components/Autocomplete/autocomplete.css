@@ -18,6 +18,7 @@
   position: absolute;
   text-align: left;
   background-color: #1c1e27;
+  transform: translate(0.2rem, 0rem);
 }
 
 .suggestion li {
@@ -49,4 +50,28 @@
 .suggestion::-webkit-scrollbar-thumb {
   background: #8f3636;
   border-radius: 5px;
+}
+
+@media (max-width: 603px) {
+  .suggestion {
+    transform: translate(0.6rem, -0.5rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .suggestion {
+    transform: translate(5rem, -0.5rem);
+  }
+}
+
+@media (max-width: 450px) {
+  .suggestion {
+    transform: translate(2.5rem, -0.5rem);
+  }
+}
+
+@media (max-width: 440px) {
+  .suggestion {
+    transform: translate(2.2rem, -0.5rem);
+  }
 }

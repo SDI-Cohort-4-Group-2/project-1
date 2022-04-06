@@ -8,21 +8,21 @@ function BusType({ props }) {
       return (
         <>
           <IoBusOutline style={{ fontSize: "50px", padding: "7px" }} />
-          <div>Double Deck</div>
+          <div style={{ paddingBottom: "5px" }}>Double Deck</div>
         </>
       );
     } else if (props.data.Services[0].NextBus.Type === "SD") {
       return (
         <>
           <MdDirectionsBusFilled style={{ fontSize: "50px", padding: "7px" }} />
-          <div className="singleDeck">Single Deck</div>
+          <div className="bus-decks-formatting">Single Deck</div>
         </>
       );
     } else {
       return (
         <>
           <MdOutlineBusAlert style={{ fontSize: "50px", padding: "7px" }} />
-          <div>Bendy</div>
+          <div className="bus-decks-formatting">Bendy</div>
         </>
       );
     }
