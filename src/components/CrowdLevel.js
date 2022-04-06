@@ -9,15 +9,6 @@ function CrowdLevel({ props }) {
           <MdOutlinePerson
             style={{ fontSize: "30px", padding: "0 0 10px 0" }}
           />
-          <MdOutlinePerson
-            style={{ fontSize: "30px", padding: "0 0 10px 0" }}
-          />
-          <MdOutlinePerson
-            style={{ fontSize: "30px", padding: "0 0 10px 0" }}
-          />
-          <MdOutlinePerson
-            style={{ fontSize: "30px", padding: "0 0 10px 0" }}
-          />
           <div>Seats Available</div>
         </>
       );
@@ -39,6 +30,15 @@ function CrowdLevel({ props }) {
     } else {
       return (
         <>
+          <MdOutlinePerson
+            style={{ fontSize: "30px", padding: "0 0 10px 0" }}
+          />
+          <MdOutlinePerson
+            style={{ fontSize: "30px", padding: "0 0 10px 0" }}
+          />
+          <MdOutlinePerson
+            style={{ fontSize: "30px", padding: "0 0 10px 0" }}
+          />
           <MdOutlinePerson
             style={{ fontSize: "30px", padding: "0 0 10px 0" }}
           />
