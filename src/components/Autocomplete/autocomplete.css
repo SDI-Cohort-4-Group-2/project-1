@@ -1,0 +1,52 @@
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+  position: absolute;
+}
+
+.suggestion {
+  border: 1px solid #1c1e27;
+  border-radius: 20px;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 155px;
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+  background-color: #1c1e27;
+}
+
+.suggestion li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestion li:hover {
+  background-color: #8f3636;
+  opacity: 80%;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestion li:not(:last-of-type) {
+  border-bottom: 1px solid #363636;
+}
+
+.suggestion::-webkit-scrollbar {
+  width: 7px;
+}
+
+.suggestion::-webkit-scrollbar-track {
+  background-color: #1c1e27;
+  border-radius: 30px;
+  margin-block: 1em;
+}
+
+.suggestion::-webkit-scrollbar-thumb {
+  background: #8f3636;
+  border-radius: 5px;
+}
