@@ -53,16 +53,13 @@ function NextBus({ busArrival }) {
             <>
               <MdOutlinePerson style={{ fontSize: "20px" }} />
             </>
-          ) : load === "" ? (
+          ) : (
             <MdOutlinePerson
               style={{
                 fontSize: "20px",
-
                 color: "#8f3636",
               }}
             />
-          ) : (
-            `No Info Yet :( )`
           )}
         </span>
       </div>
