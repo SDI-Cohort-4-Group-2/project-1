@@ -9,9 +9,9 @@
 Our group first project building an app utilizing LTA API, extracting its data and allowing users to search for bus information in real time.
 
 Try using the app with the below examples when the buses are running!
-Eg.
-Bus Stop Code:83139 - Bus No.: 15
-Bus Stop Code:64479 - Bus No.: 329
+<br>Eg.
+<br>Bus Stop Code:83139 - Bus No.: 15
+<br>Bus Stop Code:64479 - Bus No.: 329
 
 ```
 Language Used: HTML, CSS and JavaScript
