@@ -1,0 +1,158 @@
+{
+"value":[
+        {
+            "BusStopCode": "01012",
+            "RoadName": "Victoria St",
+            "Description": "Hotel Grand Pacific",
+            "Latitude": 1.29684825487647,
+            "Longitude": 103.85253591654006
+        },
+        {
+            "BusStopCode": "01013",
+            "RoadName": "Victoria St",
+            "Description": "St. Joseph's Ch",
+            "Latitude": 1.29770970610083,
+            "Longitude": 103.8532247463225
+        },
+        {
+            "BusStopCode": "01019",
+            "RoadName": "Victoria St",
+            "Description": "Bras Basah Cplx",
+            "Latitude": 1.29698951191332,
+            "Longitude": 103.85302201172507
+        },
+        {
+            "BusStopCode": "01029",
+            "RoadName": "Nth Bridge Rd",
+            "Description": "Opp Natl Lib",
+            "Latitude": 1.2966729849642,
+            "Longitude": 103.85441422464267
+        },
+        {
+            "BusStopCode": "01619",
+            "RoadName": "Beach Rd",
+            "Description": "Esplanade Stn Exit F",
+            "Latitude": 1.29428694178246,
+            "Longitude": 103.85503809424233
+        },
+        {
+            "BusStopCode": "02029",
+            "RoadName": "Esplanade Dr",
+            "Description": "Aft Esplanade Stn Exit D",
+            "Latitude": 1.290106,
+            "Longitude": 103.85464
+        },
+        {
+            "BusStopCode": "02049",
+            "RoadName": "Bras Basah Rd",
+            "Description": "Raffles Hotel",
+            "Latitude": 1.29452091230981,
+            "Longitude": 103.85402155505173
+        },
+        {
+            "BusStopCode": "02051",
+            "RoadName": "Raffles Ave",
+            "Description": "The Float @ Marina Bay",
+            "Latitude": 1.2895030556082,
+            "Longitude": 103.85903388899317
+        },
+        {
+            "BusStopCode": "02061",
+            "RoadName": "Raffles Ave",
+            "Description": "The Esplanade",
+            "Latitude": 1.2899638888957,
+            "Longitude": 103.85640388886262
+        },
+        {
+            "BusStopCode": "02089",
+            "RoadName": "Raffles Blvd",
+            "Description": "Promenade Stn/Pan Pacific",
+            "Latitude": 1.29152694444975,
+            "Longitude": 103.8592061110504
+        },
+        {
+            "BusStopCode": "02099",
+            "RoadName": "Raffles Blvd",
+            "Description": "Marina Ctr Ter",
+            "Latitude": 1.29147264805943,
+            "Longitude": 103.86148558380779
+        },
+        {
+            "BusStopCode": "02101",
+            "RoadName": "Raffles Ave",
+            "Description": "AFT S'PORE FLYER",
+            "Latitude": 1.28938483786533,
+            "Longitude": 103.86183148116275
+        },
+        {
+            "BusStopCode": "02111",
+            "RoadName": "Esplanade Dr",
+            "Description": "Esplanade Bridge",
+            "Latitude": 1.29095592348389,
+            "Longitude": 103.85453419435228
+        },
+        {
+            "BusStopCode": "02119",
+            "RoadName": "Nicoll Highway",
+            "Description": "Opp War Memorial Pk",
+            "Latitude": 1.29184407356581,
+            "Longitude": 103.85534334305085
+        },
+        {
+            "BusStopCode": "02141",
+            "RoadName": "Temasek Blvd",
+            "Description": "Suntec Twr Two",
+            "Latitude": 1.29576571603037,
+            "Longitude": 103.85933814632858
+        },
+        {
+            "BusStopCode": "02149",
+            "RoadName": "Temasek Blvd",
+            "Description": "Suntec Twr Three",
+            "Latitude": 1.29560459817725,
+            "Longitude": 103.85955533029184
+        },
+        {
+            "BusStopCode": "02151",
+            "RoadName": "Temasek Blvd",
+            "Description": "Suntec Convention Ctr",
+            "Latitude": 1.29317776320814,
+            "Longitude": 103.85784623004031
+        },
+        {
+            "BusStopCode": "02159",
+            "RoadName": "Temasek Blvd",
+            "Description": "Opp Suntec Convention Ctr",
+            "Latitude": 1.29360811227161,
+            "Longitude": 103.85840672828635
+        },
+        {
+            "BusStopCode": "99161",
+            "RoadName": "Nicoll Dr",
+            "Description": "Bef Changi Beach CP 3",
+            "Latitude": 1.39026180023806,
+            "Longitude": 103.99295664134459
+        },
+        {
+            "BusStopCode": "99171",
+            "RoadName": "Nicoll Dr",
+            "Description": "Changi Beach CP 2",
+            "Latitude": 1.39112750002185,
+            "Longitude": 103.9910213889211
+        },
+        {
+            "BusStopCode": "99181",
+            "RoadName": "Telok Paku Rd",
+            "Description": "Bef S'pore Aviation Ac",
+            "Latitude": 1.38775412603923,
+            "Longitude": 103.98850309975099
+        },
+        {
+            "BusStopCode": "99189",
+            "RoadName": "Telok Paku Rd",
+            "Description": "S'pore Aviation Ac",
+            "Latitude": 1.3884141666958,
+            "Longitude": 103.9897163888532
+        }
+]
+}
