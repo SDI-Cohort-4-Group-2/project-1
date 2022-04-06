@@ -48,7 +48,7 @@ function CrowdLevel({ props }) {
     } else {
       return (
         <>
-          <div>-</div>
+          <div style={{ fontSize: "30px", padding: "10px 0 10px 0" }}>-</div>
         </>
       );
     }
