@@ -18,7 +18,7 @@ export default function BusArrivalContainer() {
           NextBus: {
             OriginCode: "",
             DestinationCode: "",
-            EstimatedArrival: new Date(),
+            EstimatedArrival: "",
             Latitude: "",
             Longitude: "",
             VisitNumber: "",
@@ -60,13 +60,12 @@ export default function BusArrivalContainer() {
   }
 
   useEffect(() => {
-      getBusStopData();
-
-  }, [])
+    getBusStopData();
+  }, []);
 
   function getBusStopData() {
     let data = BusStops.value.map((item) => {
-      return (`${item.BusStopCode} - ${item.Description}`)
+      return `${item.BusStopCode} - ${item.Description}`;
     });
 
     setBusStops(data);
@@ -80,8 +79,7 @@ export default function BusArrivalContainer() {
         <CrowdLevel />
         <NextBus busArrival={busArrival} />
         <WheelchairFriendly props={busArrival} />
-        <BusType props={busArrival}/>
-
+        <BusType props={busArrival} />
       </div>
     </>
   );
