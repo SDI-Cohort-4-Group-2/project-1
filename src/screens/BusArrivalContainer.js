@@ -89,7 +89,7 @@ export default function BusArrivalContainer() {
       <SearchBar fetchData={fetchData} />
       <div className="container">
         <ArrivalMinutes props={busArrival} />
-        <CrowdLevel />
+        <CrowdLevel props={busArrival} />
         <NextBus />
         <WheelchairFriendly />
         <BusType />
