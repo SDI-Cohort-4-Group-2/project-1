@@ -40,7 +40,7 @@ export default function Autocomplete( props ) {
             }
             setActiveSuggestion(activeSuggestion - 1);
         } else if (e.keyCode === 40) {
-            if (activeSuggestion - 1 === filteredSuggestion.length) {
+            if (activeSuggestion === filteredSuggestion.length - 1) {
                 return;
             }
             setActiveSuggestion(activeSuggestion + 1);
