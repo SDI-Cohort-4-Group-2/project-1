@@ -19,16 +19,15 @@ export default function SearchBar(props) {
         BusStopCode: `${busStopCode}`,
         ServiceNo: `${busNumber}`,
       },
-    })
-      .catch(function (error) {
-        if (error.response) {
-          setErrorMsg(`error.response: ${error.response}`)
-        } else if (error.request) {
-          setErrorMsg(`error.request: ${error.request}`)
-        } else {
-          setErrorMsg(`error.message: ${error.message}`)
-        }
-      });
+    }).catch(function (error) {
+      if (error.response) {
+        setErrorMsg(`error.response: ${error.response}`);
+      } else if (error.request) {
+        setErrorMsg(`error.request: ${error.request}`);
+      } else {
+        setErrorMsg(`error.message: ${error.message}`);
+      }
+    });
 
     if (RESPONSE.status === 200) {
       let data = RESPONSE.data;

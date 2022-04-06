@@ -153,7 +153,7 @@ button:hover {
 .friendly .word {
   font-size: 20px;
   font-weight: 900;
-  padding: 25px;
+  padding: 25px 0 25px 0;
 }
 
 .bustype {
@@ -181,7 +181,12 @@ button:hover {
   .search-one {
     margin: 10px;
   }
-  .arrival {
+
+  button {
+    margin: 5px;
+  }
+
+  /* .arrival {
     grid-column: 2;
     grid-column-end: 4;
   }
@@ -208,5 +213,5 @@ button:hover {
   .bustype {
     grid-column: 2;
     grid-column-end: 4;
-  }
+  } */
 }

@@ -34,7 +34,11 @@ function NextBus({ busArrival }) {
 
         <div className="minutes">
           {" "}
-          {timeTwo > 0 ? `${timeTwo} Mins` : ` - `}{" "}
+          {timeTwo > 0 ? (
+            `${timeTwo} Mins`
+          ) : (
+            <div style={{ paddingTop: "7px" }}> - </div>
+          )}{" "}
         </div>
         <span className="icons-padding">
           {load === "SDA" ? (
@@ -53,16 +57,15 @@ function NextBus({ busArrival }) {
             <>
               <MdOutlinePerson style={{ fontSize: "20px" }} />
             </>
-          ) : load === "" ? (
-            <MdOutlinePerson
+          ) : (
+            <div
               style={{
                 fontSize: "20px",
-
                 color: "#8f3636",
               }}
-            />
-          ) : (
-            `No Info Yet :( )`
+            >
+              -
+            </div>
           )}
         </span>
       </div>
