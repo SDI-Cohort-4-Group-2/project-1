@@ -178,6 +178,10 @@ button:hover {
 }
 
 @media (max-width: 605px) {
+  body {
+    padding-top: 65px;
+  }
+
   .search-one {
     margin: 10px;
   }
@@ -250,6 +254,10 @@ button:hover {
 
   .arrival .minutes {
     padding: 32px 0 32px 0;
+  }
+
+  .nextbus .minutes {
+    font-size: 20px;
   }
 
   .bus-decks-formatting {
