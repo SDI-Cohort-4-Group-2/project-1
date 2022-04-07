@@ -10,8 +10,8 @@ Our group first project building an app utilizing LTA API, extracting its data a
 
 Try using the app with the below examples when the buses are running!
 <br>Eg.
-<br>Bus Stop Code:83139 - Bus No.: 15
-<br>Bus Stop Code:64479 - Bus No.: 329
+<br>Bus Stop Code: ```83139``` - Bus No.: ```15```
+<br>Bus Stop Code: ```64479``` - Bus No.: ```329```
 
 ```
 Language Used: HTML, CSS and JavaScript
