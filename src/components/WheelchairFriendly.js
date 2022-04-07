@@ -11,14 +11,23 @@ function WheelchairFriendly({ props }) {
           <div>Wheelchair Friendly</div>
         </>
       );
-    } else {
+    } else if (
+      props.data.Services[0].ServiceNo !== "" &&
+      props.data.Services[0].NextBus.Feature === ""
+    ) {
       return (
         <>
           <p className="word">NOT</p>
           <div>Wheelchair Friendly</div>
         </>
       );
-    }
+    } else if (props.data.Services[0].ServiceNo === "")
+      return (
+        <>
+          {" "}
+          <div style={{ fontSize: "30px", padding: "21px 0 21px 0" }}>-</div>
+        </>
+      );
   }
   return (
     <>

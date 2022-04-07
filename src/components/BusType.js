@@ -18,11 +18,23 @@ function BusType({ props }) {
           <div className="bus-decks-formatting">Single Deck</div>
         </>
       );
-    } else {
+    } else if (props.data.Services[0].NextBus.Type === "BD") {
       return (
         <>
           <MdOutlineBusAlert style={{ fontSize: "50px", padding: "7px" }} />
           <div className="bus-decks-formatting">Bendy</div>
+        </>
+      );
+    } else {
+      return (
+        <>
+          {/* <div style={{ fontSize: "30px", padding: "10px 0 10px 0" }}></div> */}
+          <div
+            className="bus-decks-formatting"
+            style={{ fontSize: "30px", padding: "20px 0 20px 0" }}
+          >
+            -
+          </div>
         </>
       );
     }
