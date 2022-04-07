@@ -1,13 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ArrivalMinutes({ props }) {
   const [time, setTime] = useState([]);
 
   function timeDiff() {
-    const timeDiff = Math.round(
-      (new Date(props.data.Services[0].NextBus.EstimatedArrival) - new Date()) /
-        60000
-    );
+    const timeDiff = Math.round((new Date(props.data.Services[0].NextBus.EstimatedArrival) - new Date()) / 60000);
     setTime(() => {
       if (timeDiff > 0) {
         return timeDiff + " Mins";
@@ -18,7 +15,9 @@ function ArrivalMinutes({ props }) {
       }
     });
   }
-  setTimeout(timeDiff);
+  useEffect(() => {
+    timeDiff();
+  });
 
   return (
     <>
